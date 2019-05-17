@@ -9,7 +9,7 @@ import reactor.core.publisher.Flux;
 @Repository
 public interface DataSourceRepository extends ReactiveCrudRepository<DataSource, Long> {
 
-	@Query("SELECT id, kind, source, title FROM DATASOURCE d")
+	@Query("SELECT id, kind, source, title FROM datasource d")
 	Flux<DataSource> findAll();
 	
 }

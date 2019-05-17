@@ -3,7 +3,7 @@ package fr.duforat.demos.dataflow.model;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Table;
 
-@Table("DATASOURCE")
+@Table
 public class DataSource {
 
 	@Id
