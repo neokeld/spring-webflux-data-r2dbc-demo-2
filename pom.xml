@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>fr.duforat.demos</groupId>
-	<artifactId>dataflow</artifactId>
+	<artifactId>dataflow-next</artifactId>
 	<version>0.2.0-SNAPSHOT</version>
-	<name>dataflow</name>
-	<description>Data Flow project with Spring Boot</description>
+	<name>dataflow-next</name>
+	<description>Data Flow project with Spring Data R2DBC</description>
 
 	<properties>
 		<java.version>1.8</java.version>
