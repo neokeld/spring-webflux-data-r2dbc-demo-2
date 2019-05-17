@@ -17,8 +17,6 @@ public class DataInitialization {
 
     @EventListener(ApplicationReadyEvent.class)
     public void init() {
-    	System.out.println("STARTUP EVENT");
-    	    	
     	this.databaseClient.execute()
     	.sql("CREATE TABLE DATASOURCE (\r\n" + 
     			"id INTEGER PRIMARY KEY,\r\n" + 
@@ -30,8 +28,6 @@ public class DataInitialization {
     	.all()
     	.log()
     	.subscribe();
- 	
-    	System.out.println("AFTER CREATE");
     	
         this.databaseClient.execute()
         .sql("INSERT INTO DATASOURCE (id, kind, source, title) VALUES\r\n" + 
